@@ -95,6 +95,6 @@ app/backend/
 
 ## Troubleshooting
 
-- **Port already in use:** If port 8000 is occupied, use `--port 8080` (or any available port) when starting uvicorn.
-- **Missing API keys:** Ensure your `.env` file exists in the root directory and contains all required keys. The server will start without them, but hedge fund runs will fail.
-- **Poetry not found after install:** Restart your shell or run `source ~/.profile` to pick up the updated PATH.
+- **Port conflicts:** If port 8000 is already in use, start the server on a different port with `--port 8080` (or any available port). Remember to update any frontend configuration to match.
+- **Missing API keys:** If you see authentication errors, double-check that your `.env` file is in the root directory and all required keys are set correctly.
+- **Poetry not found:** After installing Poetry, you may need to restart your terminal or add `~/.local/bin` to your `PATH`.
