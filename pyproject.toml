@@ -58,7 +58,8 @@ python_files = ["test_*.py"]
 python_classes = ["Test*"]
 python_functions = ["test_*"]
 # Removed --cov flags so a plain `pytest` run doesn't require pytest-cov installed
-addopts = "-v"
+# Added -s to show print() output during test runs, useful for debugging agent logic
+addopts = "-v -s"
 
 [build-system]
 requires = ["poetry-core"]
