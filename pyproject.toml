@@ -59,7 +59,8 @@ python_classes = ["Test*"]
 python_functions = ["test_*"]
 # Removed --cov flags so a plain `pytest` run doesn't require pytest-cov installed
 # Added -s to show print() output during test runs, useful for debugging agent logic
-addopts = "-v -s"
+# Added -x to stop on first failure -- speeds up feedback loop during local development
+addopts = "-v -s -x"
 
 [build-system]
 requires = ["poetry-core"]
