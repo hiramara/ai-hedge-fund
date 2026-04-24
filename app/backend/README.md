@@ -95,10 +95,6 @@ app/backend/
 
 ## Troubleshooting
 
-- **Port already in use:** Run with `--port 8080` (or any free port) as noted above.
-- **Missing API keys:** The server will start but requests requiring LLM or financial data calls will fail. Double-check your `.env` file is in the root directory, not inside `app/backend/`.
-- **Poetry not found after install:** Restart your shell or add `~/.local/bin` to your `PATH`.
-
-## Disclaimer
-
-This project i
+- **Port already in use:** If port 8000 is occupied, use `--port 8080` (or any available port) when starting uvicorn.
+- **Missing API keys:** Ensure your `.env` file exists in the root directory and contains all required keys. The server will start without them, but hedge fund runs will fail.
+- **Poetry not found after install:** Restart your shell or run `source ~/.profile` to pick up the updated PATH.
