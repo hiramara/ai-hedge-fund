@@ -95,6 +95,11 @@ app/backend/
 
 ## Troubleshooting
 
-- **Port conflicts:** If port 8000 is already in use, start the server on a different port with `--port 8080` (or any available port). Remember to update any frontend configuration to match.
+- **Port conflict:** If port 8000 is already in use, start the server on a different port:
+  ```bash
+  poetry run uvicorn main:app --reload --port 8080
+  ```
+
 - **Missing API keys:** If you see authentication errors, double-check that your `.env` file is in the root directory and all required keys are set correctly.
-- **Poetry not found:** After installing Poetry, you may need to restart your terminal or add `~/.local/bin` to your `PATH`.
+
+- **Poetry not found:** Make sure Poetry's bin directory is in your `PATH`. You may need to restart your terminal after installing Poetry.
