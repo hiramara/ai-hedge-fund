@@ -42,13 +42,12 @@ This project is for **educational and research purposes only**.
 - Consult a financial advisor for investment decisions
 - Past performance does not indicate future results
 
-By using this software, you agree to use it solely for learning purposes.
+By using this software, you agree to use it solely for learning
 
-## Table of Contents
-- [How to Install](#how-to-install)
-- [How to Run](#how-to-run)
-  - [⌨️ Command Line Interface](#️-command-line-interface)
-  - [🖥️ Web Application](#️-web-application)
-- [How to Contribute](#how-to-contribute)
-- [Feature Requests](#feature-requests)
-- [License](#licens
+## My Default Tickers for Testing
+
+When running experiments locally, I tend to use these tickers as a baseline for comparing agent outputs:
+
+- `AAPL` — large-cap, familiar to all agents
+- `BRK.B` — interesting to see how Buffett/Munger agents handle analyzing Berkshire itself
+- `NVDA` — good stress test for value vs. growth agent disagreement
