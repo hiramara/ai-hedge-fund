@@ -93,11 +93,12 @@ app/backend/
 └── main.py                   # FastAPI application entry point
 ```
 
+## Troubleshooting
+
+- **Port already in use:** Run with `--port 8080` (or any free port) as noted above.
+- **Missing API keys:** The server will start but requests requiring LLM or financial data calls will fail. Double-check your `.env` file is in the root directory, not inside `app/backend/`.
+- **Poetry not found after install:** Restart your shell or add `~/.local/bin` to your `PATH`.
+
 ## Disclaimer
 
-This project is for **educational and research purposes only**.
-
-- Not intended for real trading or investment
-- No warranties or guarantees provided
-- Creator assumes no liability for financial losses
-- Cons
+This project i
