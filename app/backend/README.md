@@ -95,6 +95,6 @@ app/backend/
 
 ## Troubleshooting
 
-- **Port conflicts:** If port 8000 is already in use, specify an alternate port with `--port 8080` (or any available port).
-- **Missing API keys:** Ensure all required keys are set in your `.env` file before starting the server. The server will start without them, but requests to the hedge fund endpoints will fail.
-- **Poetry not found:** After installing Poetry, you may need to restart your terminal or add `~/.local/bin` to your `PATH`.
+- **Port conflict:** If you see `Address already in use`, either stop the process using port 8000 or start the server on a different port (e.g., `--port 8080`).
+- **Poetry not found:** Make sure Poetry's bin directory is in your PATH. You may need to restart your terminal after installing Poetry.
+- **Missing API keys:** If the server starts but requests fail, double-check that your `.env` file is in the root directory and all required keys are set.
