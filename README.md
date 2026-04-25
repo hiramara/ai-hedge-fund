@@ -44,10 +44,9 @@ This project is for **educational and research purposes only**.
 
 By using this software, you agree to use it solely for learning
 
-## My Default Tickers for Testing
+## My Notes & Observations
 
-When running experiments locally, I tend to use these tickers as a baseline for comparing agent outputs:
-
-- `AAPL` — large-cap, familiar to all agents
-- `BRK.B` — interesting to see how Buffett/Munger agents handle analyzing Berkshire itself
-- `NVDA` — good stress test for value vs. growth agent disagreement
+- **Tickers I've tested:** AAPL, NVDA, BRK.B, TSLA
+- Value agents (Graham, Munger, Buffett) tend to agree most often on large-cap, stable businesses
+- Growth vs. value disagreement is most pronounced on high-P/E names like TSLA and NVDA
+- Taleb agent frequently flags downside risk even on bullish consensus tickers — useful sanity check
